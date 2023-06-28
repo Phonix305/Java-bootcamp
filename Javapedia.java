@@ -19,7 +19,7 @@ class Javapedia{
 				database[i][1]=scan.nextLine();
 				System.out.print("      - Occupation: ");
 				database[i][2]=scan.nextLine();
-			
+			s
 		}
 		
 		

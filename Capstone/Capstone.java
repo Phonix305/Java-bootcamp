@@ -71,7 +71,30 @@ public class Capstone {
     
 
     public static void main(String[] args){
-        System.out.println("Print objects");
+        int count =0;
+
+        String word=randomWord(words);
+        System.out.println(gallows[count]);
+        int num=word.length();
+        printPlaceholder(num);
+        System.out.println("\n"+word+" = "+num);
+
+
+        
     }
-    
+
+    public static void printPlaceholder(int num){
+
+        for(int i=0;i<num;i++){
+            System.out.print('_');
+        }
+
+    }
+
+
+
+    public static String randomWord(String[] words){
+        int num =(int)(Math.random()*56);
+        return words[num];
+    }
 }

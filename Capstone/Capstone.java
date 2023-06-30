@@ -70,13 +70,14 @@ public class Capstone {
     " =========\n"};
     
 
+    Scanner scan=new Scanner(System.in);
     public static void main(String[] args){
         int count =0;
 
-        String word=randomWord(words);
+        String word=randomWord(words);  int num=word.length();
         System.out.println(gallows[count]);
-        int num=word.length();
-        printPlaceholder(num);
+        char[] charWord=word.toCharArray();
+        printPlaceholder(charWord);
         System.out.println("\n"+word+" = "+num);
 
 
@@ -84,17 +85,17 @@ public class Capstone {
     }
 
     public static void printPlaceholder(int num){
-
         for(int i=0;i<num;i++){
             System.out.print('_');
         }
 
     }
-
-
-
     public static String randomWord(String[] words){
         int num =(int)(Math.random()*56);
         return words[num];
     }
+
+    public static void checkGuesses(char[] charWord){
+
+    }     
 }
